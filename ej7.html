@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ8</title>
+</head>
+<body>
+    <a href="index.html">Volver al índice</a> <br>
+    <form action="https://lm.ciclo.iesnervion.es/" method="post">
+        <fieldset>
+            <legend>Receta</legend>
+            <label for="nombre">Nombre</label> <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre de la receta" required> <br> <br>
+            <label for="email">Correo del autor</label> <br>
+            <input type="email" name="correo" id="correo" placeholder="juan@email.com" required> <br> <br>
+            <label for="momento">Momento para comer:</label> <br>
+            <input type="checkbox" name="momento[]" id="desayuno" value="Desayuno"> Desayuno <br>
+            <input type="checkbox" name="momento[]" id="almuerzo" value="Almuerzo"> Almuerzo <br>
+            <input type="checkbox" name="momento[]" id="merienda" value="Merienda"> Merienda <br>
+            <input type="checkbox" name="momento[]" id="cena" value="Cena"> Cena <br>
+            <input type="checkbox" name="momento[]" id="postre" value="Postre"> Postre <br> <br>
+            <label for="ingredientes">Ingredientes necesarios:</label> <br>
+            <select name="ingredientes[]" id="ingredientes" multiple required>
+                <optgroup label="Carne">
+                    <option value="pollo">Pollo</option>
+                    <option value="ternera">Ternera</option>
+                    <option value="caballo">Caballo</option>
+                </optgroup>
+                <optgroup label="Pescado">
+                    <option value="pez espada">Pez Espada</option>
+                    <option value="atun">Atún</option>
+                    <option value="caballa">Caballa</option>
+                </optgroup>
+                <optgroup label="Fruta">
+                    <option value="manzana">Manzana</option>
+                    <option value="pera">Pera</option>
+                    <option value="platano">Platano</option>
+                </optgroup>
+                <optgroup label="Verdura">
+                    <option value="tomate">Tomate</option>
+                    <option value="pepino">Pepino</option>
+                    <option value="lechuga">Lechuga</option>
+                </optgroup>
+            </select> <br> <br>
+            <label for="horas">Tiempo de preparación (horas)</label> <br>
+            <fieldset>
+                <legend>Tiempo de preparación (horas)</legend>
+                <label>
+                    <input type="radio" name="horas" value=" 0"> 0 horas
+                </label>
+                <label>
+                    <input type="radio" name="horas" value=" 1"> 1 hora
+                </label>
+                <label>
+                    <input type="radio" name="horas" value=" 2"> 2 horas
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Tiempo de preparación (minutos)</legend>
+                <label>
+                    <input type="radio" name="minutos" value="0 "> 0 minutos
+                </label>
+                <label>
+                    <input type="radio" name="minutos" value="15 "> 15 minutos
+                </label>
+                <label>
+                    <input type="radio" name="minutos" value="30 "> 30 minutos
+                </label>
+                <label>
+                    <input type="radio" name="minutos" value="45 "> 45 minutos
+                </label>
+                <label>
+                    <input type="radio" name="minutos" value="60 "> 60 minutos
+                </label>
+            </fieldset> <br>
+            <label for="imagen">Imagen del plato</label> <br>
+            <input type="file" name="foto" id="foto" accept="image/*"> <br> <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
