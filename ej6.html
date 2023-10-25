@@ -4,18 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ej6</title>
+    <style>
+        body{
+            background-color: rgb(43, 135, 255);
+        }
+
+        #mainBox {
+            width: 50vw;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aliceblue;
+            padding: 4vh 4vw;
+            border: 1px solid black; 
+            border-radius: 12px;
+            box-shadow: 20px 25px 20px rgb(22, 68, 128);
+        }
+
+        #secondBox, #genresBox {
+            display: flex; 
+            justify-content: flex-start;
+        }
+
+        #dataBox{
+            margin-left: 1vw;
+        }
+
+        #dataBox h1, h3 {
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+
+        #genresBox p {
+            background-color: rgb(201, 227, 252);
+            margin-right: 1vw;
+            padding: .5vw;
+            border: 1px solid black;
+            border-radius: 18px;
+        }
+
+        img {
+            border-radius: 4px;
+            width: 120px;
+            transition: .5s ease-in-out;
+        }
+
+        img:hover {
+            width: 200px;
+            transition: .5s ease-in-out;
+        }
+
+
+
+    </style>
 </head>
-<body style="background-color: rgb(43, 135, 255);">
-    <a href="index.html">Volver al índice</a> <br>
-    <div style="width: 50vw; margin-left: auto; margin-right: auto; background-color: aliceblue; padding: 4vh 4vw; border: 1px solid black; border-radius: 12px;">
-        <img src="https://lamusicagratis.com/wp-content/uploads/2023/05/musica-electronica-motivadora-para-viajes-y-videos.jpg" alt="portada de la cancion" width="120px" style="border-radius: 4px;">
+<body>
+    <a href="index.html">Volver al índice</a>
+    <div id="mainBox">
+        <div id="secondBox">
+            <img src="https://lamusicagratis.com/wp-content/uploads/2023/05/musica-electronica-motivadora-para-viajes-y-videos.jpg" alt="portada de la cancion">
+            <div id="dataBox">
+                <h1>Jolly Way</h1>
+                <h3>Artegon</h3>
+                <div id="genresBox">
+                    <p>Chillout</p>
+                    <p>Electrónica</p>
+                </div>
+            </div>
+        </div>
         <p>
             En el mundo de la música electrónica, se puede decir que muy pocas canciones tienen la capacidad de ser llamadas “terapéuticas” por su audiencia. Se necesita de mucha energía y creatividad para crear una melodía motivadora y alegre que conecte con el público de una forma tan íntima, pero esto es exactamente lo que hace Artegon con Jolly Way, una pieza fascinante que ha nacido para darle paz y orden al caos de la vida diaria.
         </p>
         <p>
             Para hacerlo, Artegon ha optado por una fusión de buenos instrumentos. Este es un compositor que conoce muy bien la manera de crear sinergias entre sus melodías. Por eso, en esta ocasión, ha creado una base que aparenta ser sencilla, pero que esconde secretos verdaderamente interesantes.
         </p>
-        <audio src="music/jolly-way.mp3" controls autoplay style="width: 50vw;"></audio>
+        <audio controls autoplay style="width: 50vw;">
+            <source src="music/jolly-way.mp3" type="audio/mp3">
+        </audio>
+        <br>
     </div>
 </body>
 </html>
