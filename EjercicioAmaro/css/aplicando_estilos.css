@@ -1,0 +1,87 @@
+#parrafo1 {
+    text-align: end;
+    font-style: italic;
+    color: blue;
+}
+
+#parrafo2 {
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+#parrafo3 {
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#parrafo4 {
+    font-weight: bold;
+    text-shadow: -3px 5px 2px green;
+}
+
+#div1, #div2, #div3 {
+    width: 400px;
+    height: 200px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#div1 {
+    background-color: yellowgreen;
+}
+
+#buscadores {
+    display: flex;
+}
+
+#google, #ecosia, #duck, #elpais, #eldiario, #elmundo {
+    margin-right: 5px;
+    width: 100px;
+    height: 50px;
+    text-decoration: underline;
+    color: white;
+}
+
+#div2 {
+    background-color: cyan;
+}
+
+#redes {
+    display: inline-block;
+}
+
+#facebook, #twitter, #pinterest {
+    height: 50px;
+    width: 100px;
+    text-decoration: underline;
+    color: white;
+}
+
+#div3 {
+    background-color: blueviolet;
+}
+
+#periodicos {
+    display: flex;
+}
+
+#duck, #facebook {
+    background-color: darkred;
+}
+
+#ecosia, #twitter {
+    background-color: darkgreen;
+}
+
+#google, #pinterest {
+    background-color: darkblue;
+}

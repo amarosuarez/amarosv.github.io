@@ -1,0 +1,19 @@
+#box {
+    max-width: 500px;
+    margin: 20px auto 20px;
+    background-color: coral;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+@media (max-width: 600px) {
+    #box {
+        max-width: 500px;
+        margin: 10px auto 10px;
+        background-color: red;
+        padding: 5px;
+        border: 2px solid black;
+        color: white;
+        font-size: 12px;
+    }
+}

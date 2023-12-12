@@ -1,0 +1,8 @@
+.columna {
+    width: 30%;
+    display: inline-flex;
+    margin: 1%;
+    background-color: lightblue;
+    border: 1px solid;
+    font-weight: bold;
+}

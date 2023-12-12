@@ -1,0 +1,30 @@
+.tabla {
+    border: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.celdas {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#boxMain {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    padding: 1px;
+}
+
+#boxUp, #boxDown {
+    display: flex;
+}
+
+#tuto1, #tuto2, #tuto3, #tuto4, #tuto5, #tuto6 {
+    padding: 10px;
+    margin: 1px;
+    width: 100%;
+    border: 1px solid black;
+}
