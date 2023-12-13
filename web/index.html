@@ -35,9 +35,6 @@
                         <a class="nav-link" href="albumes.html">Álbumes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="canciones.html">Canciones</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="https://open.spotify.com/intl-es/artist/3vQ0GE3mI0dAaxIMYe5g7z"
                             target="_blank">
                             <img src="assets/logos/spotify.webp" alt="Spotify" class="icon">
@@ -76,6 +73,16 @@
     <video src="assets/videos/tenso.mp4" class="w-100" preload="auto" autoplay muted controls></video>
     <!-- Fin Video YouTube -->
 
+    <!-- Spotify -->
+    <div class="container mt-5">
+        <h3 class="text-center">Escucha a Paulo Londra en Spotify</h3>
+        <iframe style="border-radius:12px; margin-left: 10%;"
+            src="https://open.spotify.com/embed/artist/3vQ0GE3mI0dAaxIMYe5g7z?utm_source=generator" width="80%"
+            height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <!-- Fin Spotify -->
+
     <!-- Carrusel de imágenes -->
     <div id="carrusel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="3000">
         <h3 class="text-center">Imágenes de Paulo Londra</h3>
@@ -113,15 +120,29 @@
     </div>
     <!-- Fin de carrusel de imágenes -->
 
-    <!-- Spotify -->
-    <div class="container mt-5">
-        <h3 class="text-center">Escucha a Paulo Londra en Spotify</h3>
-        <iframe style="border-radius:12px; margin-left: 10%;"
-            src="https://open.spotify.com/embed/artist/3vQ0GE3mI0dAaxIMYe5g7z?utm_source=generator" width="80%"
-            height="152" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <!-- Formulario-->
+    <div class="container mt-5 bg-secondary p-4 rounded">
+        <form>
+            <div class="mb-3">
+                <h3>Mantente al día</h3>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="user@email.com">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Username</label>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
-    <!-- Fin Spotify -->
+    <!-- Fin Formulario -->
 
     <!-- Footer -->
     <div class="container text-center mt-5">
@@ -164,7 +185,7 @@
 </body>
 <script>
     // Genera un número aleatorio entre 1 y 4 (ambos incluidos)
-    const numeroAleatorio = Math.floor(Math.random() * 4) + 1;
+    const numeroAleatorio = Math.floor(Math.random() * 7) + 1;
 
     var gif = document.querySelector('#gif')
 
@@ -181,7 +202,17 @@
         case 4:
             gif.src = "assets/gifs/paulo-4.gif"
             break;
+        case 5:
+            gif.src = "assets/gifs/paulo-5.gif"
+            break;
+        case 6:
+            gif.src = "assets/gifs/paulo-6.gif"
+            break;
+        case 7:
+            gif.src = "assets/gifs/paulo-7.gif"
+            break;
     }
 
 </script>
+
 </html>
