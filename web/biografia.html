@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Londra</title>
+    <title>Biografía</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="shortcut icon" href="https://emojitool.com/img/apple/ios-13.3/lion-face-636.png" type="image/x-icon">
     <link rel="stylesheet" href="css/icon.css">
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
+
 <body class="bg-dark text-white">
     <!-- Menú -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black text-white">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 Paulo Londra
@@ -25,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="biografia.html">Biografía</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="albumes.html">Álbumes</a>
@@ -34,23 +40,27 @@
                         <a class="nav-link" href="canciones.html">Canciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://open.spotify.com/intl-es/artist/3vQ0GE3mI0dAaxIMYe5g7z" target="_blank">
+                        <a class="nav-link" href="https://open.spotify.com/intl-es/artist/3vQ0GE3mI0dAaxIMYe5g7z"
+                            target="_blank">
                             <img src="assets/logos/spotify.webp" alt="Spotify" class="icon">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://music.apple.com/es/artist/paulo-londra/1275513130" target="_blank">
+                        <a class="nav-link" href="https://music.apple.com/es/artist/paulo-londra/1275513130"
+                            target="_blank">
                             <img src="assets/logos/applemusic.png" alt="Apple Music" class="icon">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://music.amazon.es/artists/B072MZLN5V/paulo-londra" target="_blank">
+                        <a class="nav-link" href="https://music.amazon.es/artists/B072MZLN5V/paulo-londra"
+                            target="_blank">
                             <img src="assets/logos/amazonmusic.png" alt="Amazon Music" class="icon">
                         </a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.youtube.com/channel/UCzI7wZyqk7jpXWT_MILjepw" target="_blank">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCzI7wZyqk7jpXWT_MILjepw"
+                            target="_blank">
                             <img src="assets/logos/youtube.png" alt="YouTube" style="max-width: 48px">
                         </a>
                     </li>
@@ -60,58 +70,29 @@
     </nav>
     <!-- Fin menú -->
 
-    <!-- Video YouTube -->
-    <div class="ratio ratio-21x9">
-        <iframe height="340px" src="https://www.youtube.com/embed/_9HrWlJhR-Q?si=1D4NXi1-FjBxh3fk" allowfullscreen></iframe>
+    <!-- Descripción -->
+    <div class="container mt-5 bg-black p-5 rounded-5 text-white">
+        <img src="assets/images/perfil.jpeg" alt="Paulo Londra" class="img-fluid rounded-5 me-4 mb-2"
+            style="max-height: 256px; float: left;">
+        <h2 class="display-2 text-uppercase">Paulo Londra</h2>
+        <p class="fs-4">Paulo Londra nació en Córdoba, Argentina, el 12 de abril de 1998. Hijo de un padre gendarme, y
+            de una madre ama de casa, Paulo nunca tuvo ningún estímulo musical hasta que a los 13 años vio la película
+            Ocho millas, protagonizada por el rapero Eminem, gracias a una recomendación de su hermana, que lo integró
+            por completo en el mundo del rap y el hip-hop.</p>
+        <p class="fs-4">Durante su infancia, confesó haber sufrido bullying por intentar representar el estilo de los
+            raperos, hasta que interpretó un freestyle por el Día del maestro, donde logró ganarse el respeto de todos
+            los que lo molestaban. En su adolescencia practicó Baloncesto y se vio influenciado por los vídeos de
+            YouTube que miraba sobre Eminem y las batallas de rap de competencias populares de plaza en Argentina, como
+            el Halabalusa o El Quinto Escalón. A raíz de eso Paulo empezó a ganar popularidad por asistir a competencias
+            que estaban creciendo en auge, como El Quinto Escalón, La Rebeldía de los Dioses, entre otros. A los 14 años
+            se presentó por primera vez en una competencia de freestyle, en un torneo conocido como Sin Escritura que se
+            celebraba en la plaza de su ciudad. Sin embargo, Paulo confesó que no le iba bien en las batallas de rap, ya
+            que en esas competencias solían triunfar los raperos que tiraban las barras más agresivas, y él demostraba
+            otro tipo de estilo más melódico y técnico. Luego de finalizar el secundario, estudió dos años de derecho en
+            la universidad en paralelo a su hobbie de componer canciones y participar en batallas de rap.</p>
     </div>
-    <!-- Fin Video YouTube -->
+    <!-- Fin Descripción -->
 
-    <!-- Carrusel de imágenes -->
-    <div id="carrusel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="3000">
-        <h3 class="text-center">Imágenes de Paulo Londra</h3>
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3"></button>
-        </div>
-
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner container">
-            <div class="carousel-item active">
-                <img src="assets/images/Paulo_Londra_concierto.jpg" class="d-block img-fluid rounded-5">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/paulo_thumbnail.jpg" class="d-block img-fluid rounded-5">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/paulo.jpeg" class="d-block img-fluid rounded-5">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/paulo-2.jpeg" class="d-block img-fluid rounded-5">
-            </div>
-        </div>
-
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-    <!-- Fin de carrusel de imágenes -->
-
-    <!-- Spotify -->
-    <div class="container mt-5">
-        <h3 class="text-center">Escucha a Paulo Londra en Spotify</h3>
-        <iframe style="border-radius:12px; margin-left: 10%;"
-            src="https://open.spotify.com/embed/artist/3vQ0GE3mI0dAaxIMYe5g7z?utm_source=generator" width="80%"
-            height="152" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    <!-- Fin Spotify -->
 
     <!-- Footer -->
     <div class="container text-center mt-5">
@@ -124,7 +105,7 @@
                 <div class="col-6 col-md">
                     <h5>Enlaces</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" href="biografia.html">Biografía</a></li>
+                        <li><a class="link-secondary" href="index.html">Inicio</a></li>
                         <li><a class="link-secondary" href="albumes.html">Albumes</a></li>
                         <li><a class="link-secondary" href="canciones.html">Canciones</a></li>
                     </ul>
